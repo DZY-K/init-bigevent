@@ -47,6 +47,7 @@ $(function () {
           return layer.msg('登录成功');
         }
         layer.msg('登录成功');
+        // console.log(res);
         // 登录成功后，把得到的token字符串，存到localStorage
         localStorage.setItem('token', res.token)
         // 跳转到后台主页
