@@ -44,7 +44,7 @@ $(function () {
       data: $("#form_login").serialize(),
       success: function (res) {
         if (res.status !== 0) {
-          return console.log(res);
+          return layer.msg('登录成功');
         }
         layer.msg('登录成功');
         // 登录成功后，把得到的token字符串，存到localStorage
