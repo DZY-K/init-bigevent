@@ -1,10 +1,9 @@
 // 注意：每次调用$.get() ,$.post(),$.ajax()的时候
-// 都会先调用 ajaxPrefilter 这个函数
+// 都会先调用 ajaxPrefilter 这个函数，这是Ajax封装的函数
 // 在这个函数中，可以拿到我们给Ajax提供的配置对象
 $(function () {
   $.ajaxPrefilter(function (options) {
-    options.url = 'http://www.liulongbin.top:3007'
-      + options.url
+    options.url = 'http://127.0.0.1:3008' + options.url
 
     // 统一为有权限的接口，设置headers请求头
     if (options.url.indexOf('/my/') !== -1) {

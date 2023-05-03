@@ -44,7 +44,7 @@ $(function () {
       data: $("#form_login").serialize(),
       success: function (res) {
         if (res.status !== 0) {
-          return layer.msg('登录成功');
+          return layer.msg('登录失败');
         }
         layer.msg('登录成功');
         // console.log(res);

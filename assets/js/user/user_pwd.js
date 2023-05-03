@@ -29,6 +29,7 @@ $(function(){
           return layer.msg('更新密码失败！')
         }
         layer.msg('更新密码成功！')
+        // console.log(res.data);
         // 重置表单
         $(".layui-form")[0].reset()
       }
